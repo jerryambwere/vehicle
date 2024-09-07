@@ -1,0 +1,236 @@
+/* DataDisplay.css */
+
+.data-display-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: auto;
+}
+
+.data-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-content {
+  flex: 1;
+}
+
+.data-brand {
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+}
+
+.data-model,
+.data-year {
+  margin: 5px 0;
+  color: #666;
+}
+
+.info-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.info-button:hover {
+  transform: scale(1.1);
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.2em;
+  color: #888;
+}
+/* SingleData.css */
+
+.single-data-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.data-year {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.data-engine,
+.data-fuel-efficiency {
+  margin-bottom: 20px;
+}
+
+.data-engine h2,
+.data-fuel-efficiency h2 {
+  font-size: 1.5em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.loading,
+.error,
+.no-data {
+  text-align: center;
+  font-size: 1.2em;
+  color: #888;
+  margin: 20px;
+}
+/* Reviews.css */
+
+.reviews-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.current-review,
+.all-reviews {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.current-review h2,
+.all-reviews h2 {
+  font-size: 1.3em;
+  color: #333;
+}
+
+.review-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader_cube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.loader_cube--glowing {
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.loader_cube--color {
+  z-index: 1;
+  filter: blur(2px);
+  background: linear-gradient(135deg, #1afbf0, #da00ff);
+  animation: loadtwo 2.5s ease-in-out infinite;
+}
+
+@keyframes loadtwo {
+  50% {
+    transform: rotate(-80deg);
+  }
+}

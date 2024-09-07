@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Euclid Circular A", "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Carousel Page */
+.page.carousel-1-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 8vw;
+  background: linear-gradient(45deg, #2c3d46, #0c0f13);
+  color: #f9f9f9;
+  min-height: 100vh; /* Ensure full height of the page */
+}
+
+/* Swiper Container */
+.swiper {
+  width: 100%;
+  max-width: 1200px; /* Increased max-width for larger display */
+  height: 600px; /* Increased height for better visibility */
+  margin: 0 auto; /* Centering the Swiper container */
+}
+
+/* Swiper Slide */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  filter: grayscale(0.6);
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensure absolute positioning of inner elements works correctly */
+}
+
+/* Overlay for Slides */
+.swiper-slide div {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(transparent 55%, rgba(0, 0, 0, 0.6));
+  transition: opacity 0.25s ease;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Adjust padding for better content spacing */
+}
+
+.swiper-slide-active div {
+  opacity: 1;
+}
+
+/* Animation for Inner Div */
+.swiper-slide > div > div {
+  transform: translateY(100px);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide-active > div > div {
+  transform: translateY(0);
+}
+
+/* Slide Title */
+.swiper-slide h2 {
+  color: #fff;
+  font-weight: 300; /* Adjusted for better readability */
+  font-size: 28px; /* Increased font size for better visibility */
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Button Styles */
+.swiper a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 3.125rem;
+  padding: 12px 30px; /* Adjusted padding for a better button size */
+  font-size: 1rem; /* Slightly larger font size for better readability */
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.swiper a:hover {
+  color: #005baa;
+  background: #e0e0e0; /* Light background on hover */
+}
+
+/* Pagination Styles */
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.swiper-pagination {
+  bottom: 15px !important; /* Adjusted for better visibility */
+  transform: scale(1.3);
+}

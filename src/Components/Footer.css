@@ -1,0 +1,146 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer__container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer__brand,
+  .footer__social-links,
+  .footer__nav,
+  .footer__newsletter,
+  .footer__awards,
+  .footer__contact {
+    margin: 10px;
+  }
+  
+  .footer__brand {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer__social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-link {
+    display: inline-block;
+  }
+  
+  .social-icon {
+    fill: #fff;
+    transition: fill 0.3s ease;
+  }
+  
+  .social-link:hover .social-icon {
+    fill: #1e90ff; /* Change this to your desired hover color */
+  }
+  
+  .footer__nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .footer__nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer__nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer__newsletter-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer__newsletter-form {
+    display: flex;
+  }
+  
+  .footer__newsletter-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+  }
+  
+  .footer__newsletter-button {
+    padding: 10px;
+    border: none;
+    background-color: #1e90ff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .footer__newsletter-button:hover {
+    background-color: #0d74d3;
+  }
+  
+  .footer__awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer__awards-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer__awards-logos {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer__award-logo {
+    height: 50px;
+  }
+  
+  .footer__contact {
+    text-align: center;
+  }
+  
+  .footer__contact-text {
+    font-size: 1rem;
+  }
+  
+  .footer__contact-email {
+    display: block;
+    font-size: 1.2rem;
+    color: #1e90ff;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .footer__contact-email:hover {
+    text-decoration: underline;
+  }
+  
